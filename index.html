@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>KodeKita Studio</title>
+
+
+    <!-- =====================================================
+         TAILWIND CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="./dist/output.css"
+    >
+
+
+    <!-- =====================================================
+         GOOGLE FONT
+    ====================================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body
+    class="
+        overflow-x-hidden
+        bg-[#0B0D0E]
+        font-['Manrope']
+        text-white
+    "
+>
+
+
+    <!-- =========================================================
+         HERO
+    ========================================================== -->
+
+    <section
+        id="beranda"
+
+        class="
+            relative
+            isolate
+            min-h-screen
+            overflow-hidden
+        "
+    >
+
+
+        <!-- =====================================================
+             BACKGROUND IMAGE
+
+             Pastikan:
+             assets/hero.jpg
+        ====================================================== -->
+
+        <img
+            id="heroBackground"
+
+            src="./assets/hero.jpg.jpg"
+
+            alt="Background KodeKita"
+
+            class="
+                absolute
+                inset-0
+                z-0
+
+                h-full
+                w-full
+
+                scale-[1.03]
+
+                object-cover
+                object-center
+
+                transition-transform
+                duration-300
+                ease-out
+            "
+        >
+
+
+        <!-- =====================================================
+             DARK OVERLAY
+        ====================================================== -->
+
+        <div
+            class="
+                absolute
+                inset-0
+                z-10
+
+                bg-gradient-to-r
+
+                from-[#050A0C]/80
+                via-[#050A0C]/45
+                to-[#050A0C]/10
+            "
+        ></div>
+
+
+        <!-- =====================================================
+             BOTTOM FADE
+        ====================================================== -->
+
+        <div
+            class="
+                absolute
+                bottom-0
+                left-0
+                right-0
+                z-10
+
+                h-52
+
+                bg-gradient-to-t
+                from-[#0B0D0E]
+                to-transparent
+            "
+        ></div>
+
+
+        <!-- =====================================================
+             NAVBAR
+        ====================================================== -->
+
+        <header
+            class="
+                relative
+                z-30
+
+                mx-auto
+
+                flex
+
+                w-[calc(100%-48px)]
+                max-w-[1100px]
+
+                items-center
+                justify-between
+
+                pt-7
+            "
+        >
+
+
+            <!-- =================================================
+                 LOGO
+            ================================================== -->
+
+            <a
+                href="#beranda"
+
+                class="
+                    flex
+                    items-center
+                    gap-[9px]
+                "
+            >
+
+                <div
+                    class="
+                        grid
+
+                        h-[30px]
+                        w-[30px]
+
+                        rotate-[-8deg]
+
+                        place-items-center
+
+                        rounded-[8px]
+
+                        border-2
+                        border-white/90
+
+                        text-[14px]
+                        font-bold
+                    "
+                >
+                    K
+                </div>
+
+
+                <span
+                    class="
+                        text-[23px]
+                        font-extrabold
+                        tracking-[-1px]
+                    "
+                >
+                    KodeKita
+                </span>
+
+            </a>
+
+
+            <!-- =================================================
+                 DESKTOP NAVIGATION
+            ================================================== -->
+
+            <nav
+                class="
+                    hidden
+
+                    items-center
+                    gap-[5px]
+
+                    rounded-[14px]
+
+                    border
+                    border-white/10
+
+                    bg-white/10
+
+                    p-1.5
+
+                    backdrop-blur-[16px]
+
+                    md:flex
+                "
+            >
+
+                <a
+                    href="#beranda"
+
+                    class="
+                        rounded-[9px]
+
+                        px-4
+                        py-2.5
+
+                        text-[13px]
+                        font-medium
+
+                        text-white/80
+
+                        transition-all
+                        duration-200
+
+                        hover:bg-white/10
+                        hover:text-white
+                    "
+                >
+                    Beranda
+                </a>
+
+
+                <a
+                    href="#tentang"
+
+                    class="
+                        rounded-[9px]
+
+                        px-4
+                        py-2.5
+
+                        text-[13px]
+                        font-medium
+
+                        text-white/80
+
+                        transition-all
+                        duration-200
+
+                        hover:bg-white/10
+                        hover:text-white
+                    "
+                >
+                    Tentang
+                </a>
+
+
+                <a
+                    href="#sell"
+
+                    class="
+                        rounded-[9px]
+
+                        px-4
+                        py-2.5
+
+                        text-[13px]
+                        font-medium
+
+                        text-white/80
+
+                        transition-all
+                        duration-200
+
+                        hover:bg-white/10
+                        hover:text-white
+                    "
+                >
+                    Sell
+                </a>
+
+
+                <a
+                    href="#scale"
+
+                    class="
+                        rounded-[9px]
+
+                        px-4
+                        py-2.5
+
+                        text-[13px]
+                        font-medium
+
+                        text-white/80
+
+                        transition-all
+                        duration-200
+
+                        hover:bg-white/10
+                        hover:text-white
+                    "
+                >
+                    Scale
+                </a>
+
+
+                <a
+                    href="#login"
+
+                    class="
+                        ml-2
+
+                        rounded-[9px]
+
+                        px-4
+                        py-2.5
+
+                        text-[13px]
+                        font-medium
+
+                        text-white/80
+
+                        transition-all
+                        duration-200
+
+                        hover:bg-white/10
+                        hover:text-white
+                    "
+                >
+                    Masuk
+                </a>
+
+
+                <a
+                    href="#register"
+
+                    class="
+                        rounded-[9px]
+
+                        bg-white
+
+                        px-5
+                        py-[11px]
+
+                        text-[13px]
+                        font-bold
+
+                        text-[#111]
+
+                        transition-all
+                        duration-200
+
+                        hover:-translate-y-0.5
+                        hover:bg-[#EEEEEE]
+                    "
+                >
+                    Daftar
+                </a>
+
+            </nav>
+
+
+            <!-- =================================================
+                 MOBILE MENU BUTTON
+            ================================================== -->
+
+            <button
+                id="menuToggle"
+
+                type="button"
+
+                aria-label="Buka menu"
+                aria-expanded="false"
+
+                class="
+                    flex
+
+                    h-[42px]
+                    w-[42px]
+
+                    flex-col
+                    items-center
+                    justify-center
+
+                    gap-1.5
+
+                    rounded-[10px]
+
+                    border
+                    border-white/15
+
+                    bg-white/10
+
+                    md:hidden
+                "
+            >
+
+                <span
+                    class="
+                        block
+                        h-px
+                        w-[18px]
+                        bg-white
+                    "
+                ></span>
+
+                <span
+                    class="
+                        block
+                        h-px
+                        w-[18px]
+                        bg-white
+                    "
+                ></span>
+
+                <span
+                    class="
+                        block
+                        h-px
+                        w-[18px]
+                        bg-white
+                    "
+                ></span>
+
+            </button>
+
+        </header>
+
+
+        <!-- =====================================================
+             MOBILE NAVIGATION
+        ====================================================== -->
+
+        <nav
+            id="mobileMenu"
+
+            class="
+                absolute
+
+                left-4
+                right-4
+                top-[72px]
+
+                z-40
+
+                hidden
+
+                flex-col
+                gap-1
+
+                rounded-[14px]
+
+                border
+                border-white/10
+
+                bg-[#0F1214]/95
+
+                p-2.5
+
+                shadow-2xl
+
+                backdrop-blur-[20px]
+
+                md:hidden
+            "
+        >
+
+            <a
+                href="#beranda"
+
+                class="
+                    rounded-[9px]
+
+                    px-4
+                    py-3
+
+                    text-center
+
+                    text-[13px]
+                    font-medium
+
+                    text-white/80
+
+                    transition
+
+                    hover:bg-white/10
+                    hover:text-white
+                "
+            >
+                Beranda
+            </a>
+
+
+            <a
+                href="#tentang"
+
+                class="
+                    rounded-[9px]
+
+                    px-4
+                    py-3
+
+                    text-center
+
+                    text-[13px]
+                    font-medium
+
+                    text-white/80
+
+                    transition
+
+                    hover:bg-white/10
+                    hover:text-white
+                "
+            >
+                Tentang
+            </a>
+
+
+            <a
+                href="#sell"
+
+                class="
+                    rounded-[9px]
+
+                    px-4
+                    py-3
+
+                    text-center
+
+                    text-[13px]
+                    font-medium
+
+                    text-white/80
+
+                    transition
+
+                    hover:bg-white/10
+                    hover:text-white
+                "
+            >
+                Sell
+            </a>
+
+
+            <a
+                href="#scale"
+
+                class="
+                    rounded-[9px]
+
+                    px-4
+                    py-3
+
+                    text-center
+
+                    text-[13px]
+                    font-medium
+
+                    text-white/80
+
+                    transition
+
+                    hover:bg-white/10
+                    hover:text-white
+                "
+            >
+                Scale
+            </a>
+
+
+            <a
+                href="#login"
+
+                class="
+                    rounded-[9px]
+
+                    px-4
+                    py-3
+
+                    text-center
+
+                    text-[13px]
+                    font-medium
+
+                    text-white/80
+
+                    transition
+
+                    hover:bg-white/10
+                    hover:text-white
+                "
+            >
+                Masuk
+            </a>
+
+
+            <a
+                href="#register"
+
+                class="
+                    mt-1
+
+                    rounded-[9px]
+
+                    bg-white
+
+                    px-4
+                    py-3
+
+                    text-center
+
+                    text-[13px]
+                    font-bold
+
+                    text-[#111]
+
+                    transition
+
+                    hover:bg-[#EEEEEE]
+                "
+            >
+                Daftar
+            </a>
+
+        </nav>
+
+
+        <!-- =====================================================
+             HERO CONTENT
+        ====================================================== -->
+
+        <div
+            class="
+                relative
+                z-20
+
+                mx-auto
+
+                flex
+
+                min-h-[calc(100vh-100px)]
+
+                w-[calc(100%-48px)]
+                max-w-[1100px]
+
+                items-center
+            "
+        >
+
+            <div
+                class="
+                    max-w-[600px]
+
+                    pb-[70px]
+
+                    animate-content-reveal
+                "
+            >
+
+
+                <!-- =================================================
+                     LABEL
+                ================================================== -->
+
+                <div
+                    class="
+                        mb-[22px]
+
+                        inline-flex
+
+                        items-center
+                        gap-2
+
+                        rounded-full
+
+                        border
+                        border-white/15
+
+                        bg-white/[0.08]
+
+                        px-3
+                        py-[7px]
+
+                        text-[11px]
+                        font-semibold
+
+                        text-white/[0.85]
+
+                        backdrop-blur-[12px]
+                    "
+                >
+
+                    <span
+                        class="
+                            h-1.5
+                            w-1.5
+
+                            rounded-full
+
+                            bg-[#8EE3A8]
+
+                            shadow-[0_0_10px_rgba(142,227,168,0.8)]
+                        "
+                    ></span>
+
+
+                    Co-founder lets you run an entire company with AI
+
+                </div>
+
+
+                <!-- =================================================
+                     TITLE
+                ================================================== -->
+
+                <h1
+                    class="
+                        max-w-[680px]
+
+                        text-[clamp(46px,6vw,78px)]
+
+                        font-bold
+
+                        leading-[0.98]
+
+                        tracking-[-4px]
+                    "
+                >
+
+                    Dari Baris Kode,
+
+                    <span
+                        class="text-white/[0.58]"
+                    >
+                        Jadi Karya Nyata.
+                    </span>
+
+                </h1>
+
+
+                <!-- =================================================
+                     DESCRIPTION
+                ================================================== -->
+
+                <p
+                    class="
+                        mt-[25px]
+
+                        max-w-[520px]
+
+                        text-[15px]
+
+                        leading-[1.7]
+
+                        text-white/[0.70]
+                    "
+                >
+
+                    Kembangkan kemampuan coding-mu bersama
+                    KodeKita melalui materi interaktif, latihan praktis,
+                    dan project nyata yang mudah dipahami.
+
+                </p>
+
+
+                <!-- =================================================
+                     BUTTONS
+                ================================================== -->
+
+                <div
+                    class="
+                        mt-8
+
+                        flex
+                        items-center
+
+                        gap-3
+
+                        max-sm:flex-col
+                        max-sm:items-stretch
+                    "
+                >
+
+                    <!-- PRIMARY -->
+
+                    <a
+                        href="#mulai"
+
+                        class="
+                            inline-flex
+
+                            min-w-[125px]
+
+                            items-center
+                            justify-center
+
+                            rounded-[10px]
+
+                            bg-white
+
+                            px-[21px]
+                            py-[13px]
+
+                            text-[13px]
+                            font-bold
+
+                            text-[#111]
+
+                            transition-all
+                            duration-200
+
+                            hover:-translate-y-[3px]
+                            hover:bg-[#EEEEEE]
+
+                            max-sm:w-full
+                        "
+                    >
+                        Mulai Belajar
+                    </a>
+
+
+                    <!-- SECONDARY -->
+
+                    <a
+                        href="#tentang"
+
+                        class="
+                            inline-flex
+
+                            min-w-[125px]
+
+                            items-center
+                            justify-center
+
+                            rounded-[10px]
+
+                            border
+                            border-white/15
+
+                            bg-white/[0.08]
+
+                            px-[21px]
+                            py-[13px]
+
+                            text-[13px]
+                            font-bold
+
+                            text-white
+
+                            backdrop-blur-[10px]
+
+                            transition-all
+                            duration-200
+
+                            hover:-translate-y-[3px]
+                            hover:bg-white/[0.14]
+
+                            max-sm:w-full
+                        "
+                    >
+                        Pelajari KodeKita
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             SCROLL INDICATOR
+        ====================================================== -->
+
+        <div
+            class="
+                absolute
+
+                bottom-7
+                left-1/2
+
+                z-20
+
+                flex
+
+                -translate-x-1/2
+
+                flex-col
+                items-center
+
+                gap-2
+
+                text-[10px]
+
+                uppercase
+
+                tracking-[1px]
+
+                text-white/[0.55]
+
+                max-md:hidden
+            "
+        >
+
+            <span>
+                Scroll
+            </span>
+
+
+            <div
+                class="
+                    h-8
+                    w-px
+
+                    animate-scroll-move
+
+                    bg-white/[0.45]
+                "
+            ></div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         INTRO SECTION
+    ========================================================== -->
+
+    <section
+        id="tentang"
+
+        class="
+            min-h-[60vh]
+
+            bg-[#0B0D0E]
+
+            px-6
+            py-[120px]
+        "
+    >
+
+        <div
+            class="
+                mx-auto
+
+                max-w-[1000px]
+
+                text-center
+            "
+        >
+
+            <h2
+                class="
+                    text-[clamp(30px,5vw,48px)]
+
+                    font-bold
+
+                    tracking-[-2px]
+                "
+            >
+
+                Belajar coding.
+
+                <br>
+
+                Bangun sesuatu yang nyata.
+
+            </h2>
+
+
+            <p
+                class="
+                    mx-auto
+
+                    mt-5
+
+                    max-w-[600px]
+
+                    leading-[1.8]
+
+                    text-[#8E9396]
+                "
+            >
+
+                KodeKita membantu kamu memahami dunia pemrograman
+                melalui pembelajaran yang praktis, terstruktur,
+                dan berorientasi pada project.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+
+    <script>
+
+        // =====================================================
+        // ELEMENT
+        // =====================================================
+
+        const menuToggle =
+            document.getElementById("menuToggle");
+
+        const mobileMenu =
+            document.getElementById("mobileMenu");
+
+        const heroBackground =
+            document.getElementById("heroBackground");
+
+        const hero =
+            document.getElementById("beranda");
+
+
+        // =====================================================
+        // MOBILE MENU
+        // =====================================================
+
+        menuToggle.addEventListener(
+            "click",
+            () => {
+
+                const isOpen =
+                    !mobileMenu.classList.contains("hidden");
+
+
+                if (isOpen) {
+
+                    mobileMenu.classList.add(
+                        "hidden"
+                    );
+
+                    mobileMenu.classList.remove(
+                        "flex"
+                    );
+
+                    menuToggle.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                } else {
+
+                    mobileMenu.classList.remove(
+                        "hidden"
+                    );
+
+                    mobileMenu.classList.add(
+                        "flex"
+                    );
+
+                    menuToggle.setAttribute(
+                        "aria-expanded",
+                        "true"
+                    );
+
+                }
+
+            }
+        );
+
+
+        // =====================================================
+        // CLOSE MOBILE MENU
+        // =====================================================
+
+        mobileMenu
+            .querySelectorAll("a")
+            .forEach(
+                (link) => {
+
+                    link.addEventListener(
+                        "click",
+                        () => {
+
+                            mobileMenu.classList.add(
+                                "hidden"
+                            );
+
+                            mobileMenu.classList.remove(
+                                "flex"
+                            );
+
+                            menuToggle.setAttribute(
+                                "aria-expanded",
+                                "false"
+                            );
+
+                        }
+                    );
+
+                }
+            );
+
+
+        // =====================================================
+        // PARALLAX BACKGROUND
+        // =====================================================
+
+        window.addEventListener(
+            "mousemove",
+            (event) => {
+
+                // Mobile tidak memakai parallax
+
+                if (
+                    window.innerWidth <= 800
+                ) {
+                    return;
+                }
+
+
+                const x =
+                    (
+                        event.clientX /
+                        window.innerWidth -
+                        0.5
+                    ) * 8;
+
+
+                const y =
+                    (
+                        event.clientY /
+                        window.innerHeight -
+                        0.5
+                    ) * 8;
+
+
+                heroBackground.style.transform =
+                    `scale(1.03) translate(${x}px, ${y}px)`;
+
+            }
+        );
+
+
+        // =====================================================
+        // RESET PARALLAX
+        // =====================================================
+
+        hero.addEventListener(
+            "mouseleave",
+            () => {
+
+                heroBackground.style.transform =
+                    "scale(1.03)";
+
+            }
+        );
+
+
+        // =====================================================
+        // CLOSE MENU WHEN CLICKING OUTSIDE
+        // =====================================================
+
+        document.addEventListener(
+            "click",
+            (event) => {
+
+                const clickedInsideMenu =
+                    mobileMenu.contains(
+                        event.target
+                    );
+
+                const clickedButton =
+                    menuToggle.contains(
+                        event.target
+                    );
+
+
+                if (
+                    !clickedInsideMenu &&
+                    !clickedButton
+                ) {
+
+                    mobileMenu.classList.add(
+                        "hidden"
+                    );
+
+                    mobileMenu.classList.remove(
+                        "flex"
+                    );
+
+                    menuToggle.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+
+                }
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>

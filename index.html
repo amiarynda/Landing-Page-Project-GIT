@@ -1,658 +1,165 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-
-<head>
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KodeKita</title>
 
+    <link rel="stylesheet" href="./dist/output.css" />
 
-    <!-- =====================================================
-         TAILWIND CSS
-    ====================================================== -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        rel="stylesheet"
-        href="./dist/output.css"
-    >
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Manrope:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body class="m-0 overflow-x-hidden bg-[#0B0D0E] font-['Manrope'] text-white">
+    <section id="beranda" class="relative isolate min-h-screen overflow-hidden">
+      <img
+        id="heroBackground"
+        src="./assets/hero-baru.png"
+        alt="Background KodeKita"
+        class="absolute inset-0 z-0 h-full w-full scale-[1.02] object-cover object-center transition-transform duration-300 ease-out"
+      />
 
-    <!-- =====================================================
-         GOOGLE FONT
-    ====================================================== -->
+      <div
+        class="absolute inset-0 z-10 bg-gradient-to-r from-black/55 via-black/20 to-transparent"
+      ></div>
 
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
+      <div
+        class="absolute left-0 right-0 top-0 z-20 h-[64px] bg-[#071B25]/75 backdrop-blur-[8px]"
+      ></div>
 
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Manrope:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
-
-</head>
-
-
-<body
-    class="
-        m-0
-        overflow-x-hidden
-
-        bg-[#0B0D0E]
-
-        font-['Manrope']
-
-        text-white
-    "
->
-
-
-    <!-- =====================================================
-         HERO / BERANDA
-    ====================================================== -->
-
-    <section
-        id="beranda"
-
-        class="
-            relative
-            isolate
-
-            min-h-screen
-
-            overflow-hidden
-        "
-    >
-
-
-        <!-- =================================================
-             BACKGROUND IMAGE
-        ================================================== -->
-
-        <img
-            id="heroBackground"
-
-            src="./assets/hero-baru.png"
-
-            alt="Background KodeKita"
-
-            class="
-                absolute
-                inset-0
-
-                z-0
-
-                h-full
-                w-full
-
-                scale-[1.02]
-
-                object-cover
-                object-center
-
-                transition-transform
-                duration-300
-                ease-out
-            "
+      <header
+        class="relative z-30 flex h-[64px] w-full items-center justify-between px-[48px] max-md:px-6"
+      >
+        <a
+          href="#beranda"
+          class="font-['Bitcount_Grid_Double'] text-[27px] font-semibold leading-none tracking-[-1px] text-white transition-opacity duration-200 hover:opacity-80"
         >
+          KodeKita
+        </a>
 
-
-        <!-- =================================================
-             OVERLAY
-        ================================================== -->
-
-        <div
-            class="
-                absolute
-                inset-0
-
-                z-10
-
-                bg-gradient-to-r
-                from-black/55
-                via-black/20
-                to-transparent
-            "
-        ></div>
-
-
-        <!-- =================================================
-             NAVBAR BACKGROUND
-        ================================================== -->
-
-        <div
-            class="
-                absolute
-
-                left-0
-                right-0
-                top-0
-
-                z-20
-
-                h-[64px]
-
-                bg-[#071B25]/75
-
-                backdrop-blur-[8px]
-            "
-        ></div>
-
-
-        <!-- =================================================
-             NAVBAR
-        ================================================== -->
-
-        <header
-            class="
-                relative
-                z-30
-
-                flex
-
-                h-[64px]
-
-                w-full
-
-                items-center
-                justify-between
-
-                px-[48px]
-
-                max-md:px-6
-            "
+        <nav
+          class="flex items-center gap-[2px] rounded-[10px] border border-white/10 bg-white/10 p-[5px] backdrop-blur-[12px]"
         >
+          <a
+            href="#beranda"
+            data-nav="beranda"
+            class="rounded-[7px] bg-white px-[16px] py-[8px] text-[12px] font-medium text-black transition-all duration-200 hover:bg-white hover:text-black"
+          >
+            Beranda
+          </a>
 
+          <a
+            href="#tentang"
+            data-nav="tentang"
+            class="rounded-[7px] px-[16px] py-[8px] text-[12px] font-medium text-white/75 transition-all duration-200 hover:bg-white hover:text-black"
+          >
+            Tentang
+          </a>
 
-            <!-- =================================================
-                 LOGO
-            ================================================== -->
+          <a
+            href="#kontak"
+            data-nav="kontak"
+            class="rounded-[7px] px-[16px] py-[8px] text-[12px] font-medium text-white/75 transition-all duration-200 hover:bg-white hover:text-black"
+          >
+            Kontak
+          </a>
+        </nav>
+      </header>
 
-            <a
-                href="#beranda"
-
-                class="
-                    font-['Bitcount_Grid_Double']
-
-                    text-[27px]
-
-                    font-semibold
-
-                    leading-none
-
-                    tracking-[-1px]
-
-                    text-white
-
-                    transition-opacity
-                    duration-200
-
-                    hover:opacity-80
-                "
-            >
-                KodeKita
-            </a>
-
-
-            <!-- =================================================
-                 NAVIGATION
-            ================================================== -->
-
-            <nav
-                class="
-                    flex
-
-                    items-center
-
-                    gap-[2px]
-
-                    rounded-[10px]
-
-                    border
-                    border-white/10
-
-                    bg-white/10
-
-                    p-[5px]
-
-                    backdrop-blur-[12px]
-                "
-            >
-
-                <!-- =================================================
-                     BERANDA
-                ================================================== -->
-
-                <a
-                    href="#beranda"
-
-                    data-nav="beranda"
-
-                    class="
-                        rounded-[7px]
-
-                        bg-white
-
-                        px-[16px]
-                        py-[8px]
-
-                        text-[12px]
-                        font-medium
-
-                        text-black
-
-                        transition-all
-                        duration-200
-
-                        hover:bg-white
-                        hover:text-black
-                    "
-                >
-                    Beranda
-                </a>
-
-
-                <!-- =================================================
-                     TENTANG
-                ================================================== -->
-
-                <a
-                    href="#tentang"
-
-                    data-nav="tentang"
-
-                    class="
-                        rounded-[7px]
-
-                        px-[16px]
-                        py-[8px]
-
-                        text-[12px]
-                        font-medium
-
-                        text-white/75
-
-                        transition-all
-                        duration-200
-
-                        hover:bg-white
-                        hover:text-black
-                    "
-                >
-                    Tentang
-                </a>
-
-
-                <!-- =================================================
-                     KONTAK
-                ================================================== -->
-
-                <a
-                    href="#kontak"
-
-                    data-nav="kontak"
-
-                    class="
-                        rounded-[7px]
-
-                        px-[16px]
-                        py-[8px]
-
-                        text-[12px]
-                        font-medium
-
-                        text-white/75
-
-                        transition-all
-                        duration-200
-
-                        hover:bg-white
-                        hover:text-black
-                    "
-                >
-                    Kontak
-                </a>
-
-            </nav>
-
-        </header>
-
-
-        <!-- =====================================================
-             HERO CONTENT
-        ====================================================== -->
-
+      <div class="absolute inset-0 z-20">
         <div
-            class="
-                absolute
-                inset-0
-
-                z-20
-            "
+          class="absolute left-0 top-[31%] w-full max-w-[680px] pl-[48px] max-md:pl-6"
         >
+          <h1
+            class="m-0 text-left text-[32px] font-normal leading-[1.08] tracking-[-1.2px] text-white sm:text-[38px] md:text-[44px] lg:text-[48px]"
+          >
+            Dari Baris Kode, Jadi Karya
+            <br />
+            Nyata.
+          </h1>
 
-            <div
-                class="
-                    absolute
-
-                    left-0
-
-                    top-[31%]
-
-                    w-full
-
-                    max-w-[680px]
-
-                    pl-[48px]
-
-                    max-md:pl-6
-                "
-            >
-
-                <!-- =================================================
-                     TITLE
-                ================================================== -->
-
-                <h1
-                    class="
-                        m-0
-
-                        text-left
-
-                        text-[32px]
-
-                        font-normal
-
-                        leading-[1.08]
-
-                        tracking-[-1.2px]
-
-                        text-white
-
-                        sm:text-[38px]
-
-                        md:text-[44px]
-
-                        lg:text-[48px]
-                    "
-                >
-                    Dari Baris Kode, Jadi Karya
-                    <br>
-                    Nyata.
-                </h1>
-
-
-                <!-- =================================================
-                     DESCRIPTION
-                ================================================== -->
-
-                <p
-                    class="
-                        mt-[22px]
-
-                        max-w-[520px]
-
-                        text-left
-
-                        text-[14px]
-
-                        font-normal
-
-                        leading-[1.6]
-
-                        text-white/80
-
-                        sm:text-[15px]
-
-                        md:text-[16px]
-                    "
-                >
-                    Kembangkan kemampuan coding-mu bersama KodeKita
-                    melalui materi interaktif, latihan praktis, dan
-                    proyek nyata yang mudah dipahami.
-                </p>
-
-            </div>
-
+          <p
+            class="mt-[22px] max-w-[520px] text-left text-[14px] font-normal leading-[1.6] text-white/80 sm:text-[15px] md:text-[16px]"
+          >
+            Kembangkan kemampuan coding-mu bersama KodeKita melalui materi
+            interaktif, latihan praktis, dan proyek nyata yang mudah dipahami.
+          </p>
         </div>
+      </div>
 
-
-        <!-- =====================================================
-             BOTTOM FADE
-        ====================================================== -->
-
-        <div
-            class="
-                pointer-events-none
-
-                absolute
-
-                bottom-0
-                left-0
-                right-0
-
-                z-20
-
-                h-[150px]
-
-                bg-gradient-to-t
-
-                from-black/45
-
-                to-transparent
-            "
-        ></div>
-
+      <div
+        class="pointer-events-none absolute bottom-0 left-0 right-0 z-20 h-[150px] bg-gradient-to-t from-black/45 to-transparent"
+      ></div>
     </section>
 
-
-
-
-    <!-- =====================================================
-         JAVASCRIPT
-    ====================================================== -->
-
     <script>
+      const heroBackground = document.getElementById("heroBackground");
 
-        // =====================================================
-        // BACKGROUND
-        // =====================================================
+      const navLinks = document.querySelectorAll("[data-nav]");
 
-        const heroBackground =
-            document.getElementById("heroBackground");
+      const sections = document.querySelectorAll("#beranda, #tentang, #kontak");
 
+      function setActiveNav(sectionId) {
+        navLinks.forEach((link) => {
+          const isActive = link.dataset.nav === sectionId;
 
-        // =====================================================
-        // NAVIGATION
-        // =====================================================
+          if (isActive) {
+            link.classList.add("bg-white", "text-black");
 
-        const navLinks =
-            document.querySelectorAll("[data-nav]");
+            link.classList.remove("text-white/75");
+          } else {
+            link.classList.remove("bg-white", "text-black");
 
+            link.classList.add("text-white/75");
+          }
+        });
+      }
 
-        const sections =
-            document.querySelectorAll(
-                "#beranda, #tentang, #kontak"
-            );
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          const sectionId = link.dataset.nav;
 
+          setActiveNav(sectionId);
+        });
+      });
 
-        // =====================================================
-        // ACTIVE NAV FUNCTION
-        // =====================================================
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setActiveNav(entry.target.id);
+            }
+          });
+        },
+        {
+          threshold: 0.45,
+        },
+      );
 
-        function setActiveNav(sectionId) {
+      sections.forEach((section) => {
+        observer.observe(section);
+      });
 
-            navLinks.forEach(
-                (link) => {
-
-                    const isActive =
-                        link.dataset.nav === sectionId;
-
-
-                    if (isActive) {
-
-                        link.classList.add(
-                            "bg-white",
-                            "text-black"
-                        );
-
-                        link.classList.remove(
-                            "text-white/75"
-                        );
-
-                    } else {
-
-                        link.classList.remove(
-                            "bg-white",
-                            "text-black"
-                        );
-
-                        link.classList.add(
-                            "text-white/75"
-                        );
-
-                    }
-
-                }
-            );
-
+      window.addEventListener("mousemove", (event) => {
+        if (window.innerWidth <= 768) {
+          return;
         }
 
+        const x = (event.clientX / window.innerWidth - 0.5) * 4;
 
-        // =====================================================
-        // CLICK NAVIGATION
-        // =====================================================
+        const y = (event.clientY / window.innerHeight - 0.5) * 4;
 
-        navLinks.forEach(
-            (link) => {
+        heroBackground.style.transform = `scale(1.02) translate(${x}px, ${y}px)`;
+      });
 
-                link.addEventListener(
-                    "click",
-                    () => {
-
-                        const sectionId =
-                            link.dataset.nav;
-
-
-                        setActiveNav(sectionId);
-
-                    }
-                );
-
-            }
-        );
-
-
-        // =====================================================
-        // ACTIVE NAV WHEN SCROLLING
-        // =====================================================
-
-        const observer =
-            new IntersectionObserver(
-                (entries) => {
-
-                    entries.forEach(
-                        (entry) => {
-
-                            if (
-                                entry.isIntersecting
-                            ) {
-
-                                setActiveNav(
-                                    entry.target.id
-                                );
-
-                            }
-
-                        }
-                    );
-
-                },
-                {
-                    threshold: 0.45
-                }
-            );
-
-
-        sections.forEach(
-            (section) => {
-
-                observer.observe(section);
-
-            }
-        );
-
-
-        // =====================================================
-        // BACKGROUND PARALLAX
-        // =====================================================
-
-        window.addEventListener(
-            "mousemove",
-            (event) => {
-
-                if (
-                    window.innerWidth <= 768
-                ) {
-
-                    return;
-
-                }
-
-
-                const x =
-                    (
-                        event.clientX /
-                        window.innerWidth -
-                        0.5
-                    ) * 4;
-
-
-                const y =
-                    (
-                        event.clientY /
-                        window.innerHeight -
-                        0.5
-                    ) * 4;
-
-
-                heroBackground.style.transform =
-                    `scale(1.02) translate(${x}px, ${y}px)`;
-
-            }
-        );
-
-
-        // =====================================================
-        // RESET BACKGROUND
-        // =====================================================
-
-        document
-            .getElementById("beranda")
-            .addEventListener(
-                "mouseleave",
-                () => {
-
-                    heroBackground.style.transform =
-                        "scale(1.02)";
-
-                }
-            );
-
+      document.getElementById("beranda").addEventListener("mouseleave", () => {
+        heroBackground.style.transform = "scale(1.02)";
+      });
     </script>
-
-</body>
-
+  </body>
 </html>

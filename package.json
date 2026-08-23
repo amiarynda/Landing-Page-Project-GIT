@@ -1,0 +1,11 @@
+{
+  "name": "landing-page-project-git",
+  "version": "1.0.0",
+  "scripts": {
+     "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch"
+    },
+    "dependencies": {
+        "@tailwindcss/cli": "^4.1.0",
+        "tailwindcss": "^4.1.0"
+    }
+}

@@ -1,11 +1,7 @@
 const formLink = "https://formspree.io/f/xvkpbpqp";
 
-const formElement = `
-  <form action="${formLink}" method="POST">
-    <!-- Form fields here -->
-    <button type="submit">Send</button>
-  </form>
-`;
+const formElement = document.getElementById('form-contact');
+// form element ada nama lengkap (input), email (input), subjek (input), pesan (textarea)
 
 formElement.addEventListener("submit", async (event) => {
   event.preventDefault();

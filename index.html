@@ -8,16 +8,14 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>Footer KodeKita</title>
+    <title>Tentang KodeKita</title>
 
     <link
         rel="stylesheet"
         href="./dist/output.css"
     >
 
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
+    <link`
     >
 
     <link
@@ -32,9 +30,169 @@
     >
 </head>
 
-<body class="m-0 bg-[#0D0A0A] font-['Manrope'] text-white">
+<body
+    class="
+        m-0
+        bg-[#F7F7F5]
+        font-['Manrope']
+        text-neutral-600
+    "
+>
 
-    <footer
+    <section
+        id="tentang"
+        class="
+            flex
+            min-h-screen
+            items-center
+            bg-[#F7F7F5]
+            px-[40px]
+            py-[70px]
+            md:px-[70px]
+            lg:px-[95px]
+        "
+    >
+
+        <div
+            class="
+                flex
+                w-full
+                items-center
+                justify-between
+                gap-[70px]
+                lg:gap-[100px]
+                max-md:flex-col
+                max-md:items-start
+                max-md:gap-[55px]
+            "
+        >
+
+            <div
+                class="
+                    flex
+                    flex-1
+                    flex-col
+                    items-start
+                    max-md:w-full
+                "
+            >
+
+                <h1
+                    class="
+                        m-0
+                        text-left
+                        text-[44px]
+                        font-normal
+                        leading-[1.08]
+                        tracking-[-1.8px]
+                        text-neutral-600
+                        sm:text-[48px]
+                        md:text-[52px]
+                    "
+                >
+                    KodeKita
+                </h1>
+
+                <p
+                    class="
+                        mt-[55px]
+                        max-w-[460px]
+                        text-left
+                        text-[16px]
+                        font-normal
+                        leading-[1.6]
+                        text-neutral-500
+                        sm:text-[17px]
+                        md:text-[18px]
+                    "
+                >
+                    Belajar, berkarya, dan berkembang bersama melalui teknologi dan
+                    kreativitas.
+                </p>
+            </div>
+
+                <a
+                    href="#"
+                    class="
+                        mt-[24px]
+                        inline-flex
+                        items-center
+                        justify-center
+                        rounded-[8px]
+                        bg-neutral-700
+                        px-[18px]
+                        py-[11px]
+                        text-[14px]
+                        font-medium
+                        text-white
+                        shadow-[0_3px_7px_rgba(0,0,0,0.22)]
+                        transition-all
+                        duration-200
+                        hover:-translate-y-[2px]
+                        hover:bg-neutral-800
+                        active:translate-y-0
+                    "
+                >
+                    Mulai Perjalanan Anda
+                </a>
+
+            </div>
+        </div>
+
+            <div
+                class="
+                    absolute
+                    left-1/2
+                    top-1/2
+                    flex
+                    shrink-0
+                    justify-end
+                "
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                    class="h-[14px] w-[14px]"
+                >
+                    <circle
+                        cx="12"
+                        cy="12"
+                        r="8"
+                    />
+
+                <img
+                    src="./assets/about.png"
+                    alt="Tentang KodeKita"
+                    class="
+                        h-[710px]
+                        w-[500px]
+                        rounded-[10px]
+                        object-cover
+                        object-center
+                        shadow-sm
+                        transition-transform
+                        duration-300
+                        hover:scale-[1.01]
+                        max-lg:h-[380px]
+                        max-lg:w-[430px]
+                        max-md:h-[360px]
+                        max-md:w-full
+                        max-md:max-w-[500px]
+                    "
+                >
+
+                    <path d="M12 4c-2.5 2.2-3.5 5-3.5 8s1-5.8 3.5-8" />
+                </svg>
+            </div>
+
+        </div>
+
+    </section>
+  
+      <footer
         class="
             flex
             min-h-screen

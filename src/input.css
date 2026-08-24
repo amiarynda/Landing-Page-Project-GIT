@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+
+/* =========================================================
+   HERO CONTENT ANIMATION
+========================================================= */
+@keyframes content-reveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+
+/* =========================================================
+   SCROLL ANIMATION
+========================================================= */
+
+@keyframes scroll-move {
+
+    0%,
+    100% {
+        transform: scaleY(0.5);
+        transform-origin: top;
+    }
+
+    50% {
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+
+}
+
+
+
+/* =========================================================
+   TAILWIND CUSTOM ANIMATION
+========================================================= */
+
+@theme {
+
+    --animate-content-reveal:
+        content-reveal 0.9s ease forwards;
+
+    --animate-scroll-move:
+        scroll-move 1.8s ease-in-out infinite;
+
+}

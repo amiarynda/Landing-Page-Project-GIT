@@ -9,345 +9,205 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Manrope:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
- 
+
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
   </head>
-  
-  <body class="m-0 bg-[#F7F7F5] font-['Manrope'] text-neutral-600">
-  <section id="beranda" class="relative isolate min-h-screen overflow-hidden">
-      <img
-        id="heroBackground"
-        src="./assets/hero-baru.png"
-        alt="Background KodeKita"
-        class="absolute inset-0 z-0 h-full w-full scale-[1.02] object-cover object-center transition-transform duration-300 ease-out"
-      />
-    <div
-    class="absolute inset-0 z-10 bg-gradient-to-r from-black/55 via-black/20 to-transparent"
-  ></div>
 
-  <div
-    class="absolute left-0 right-0 top-0 z-20 h-[64px] bg-[#071B25]/75 backdrop-blur-[8px]"
-  ></div>
+  <body class="m-0 h-screen overflow-hidden bg-[#181B1C] font-['Manrope'] text-white">
+    <main class="h-screen overflow-hidden">
 
-  <header
-    class="relative z-30 flex h-[64px] w-full items-center justify-between px-[48px] max-md:px-6"
-  >
-    <a
-      href="#beranda"
-      class="font-['Bitcount_Grid_Double'] text-[27px] font-semibold leading-none tracking-[-1px] text-white transition-opacity duration-200 hover:opacity-80"
-    >
-      KodeKita
-    </a>
-
-    <nav
-      class="flex items-center gap-[2px] rounded-[10px] border border-white/10 bg-white/10 p-[5px] backdrop-blur-[12px]"
-    >
-      <a
-        href="#beranda"
-        data-nav="beranda"
-        class="rounded-[7px] bg-white px-[16px] py-[8px] text-[12px] font-medium text-black transition-all duration-200 hover:bg-white hover:text-black"
+      <header
+        class="absolute left-0 top-0 z-20 flex h-[80px] w-full items-center justify-between bg-black px-[48px] md:px-[55px] lg:px-[48px]"
       >
-        Beranda
-      </a>
+        <a
+          href="#"
+          class="font-['Bitcount_Grid_Double'] text-[30px] font-normal leading-none tracking-[1px] text-white"
+        >
+          KodeKita
+        </a>
 
-      <a
-        href="#tentang"
-        data-nav="tentang"
-        class="rounded-[7px] px-[16px] py-[8px] text-[12px] font-medium text-white/75 transition-all duration-200 hover:bg-white hover:text-black"
-      >
-        Tentang
-      </a>
+        <a
+          href="#"
+          class="flex h-[38px] w-[112px] items-center justify-center rounded-[7px] bg-white text-[13px] font-normal text-neutral-800 transition hover:bg-neutral-200"
+        >
+          Back
+        </a>
+      </header>
 
-      <a
-        href="#kontak"
-        data-nav="kontak"
-        class="rounded-[7px] px-[16px] py-[8px] text-[12px] font-medium text-white/75 transition-all duration-200 hover:bg-white hover:text-black"
-      >
-        Kontak
-      </a>
-    </nav>
-  </header>
-
-  <div class="absolute inset-0 z-20">
-    <div
-      class="absolute left-0 top-[31%] w-full max-w-[680px] pl-[48px] max-md:pl-6"
-    >
-      <h1
-        class="m-0 text-left text-[32px] font-normal leading-[1.08] tracking-[-1.2px] text-white sm:text-[38px] md:text-[44px] lg:text-[48px]"
-      >
-        Dari Baris Kode, Jadi Karya
-        <br />
-        Nyata.
-      </h1>
-
-      <p
-        class="mt-[22px] max-w-[520px] text-left text-[14px] font-normal leading-[1.6] text-white/80 sm:text-[15px] md:text-[16px]"
-      >
-        Kembangkan kemampuan coding-mu bersama KodeKita melalui materi
-        interaktif, latihan praktis, dan proyek nyata yang mudah dipahami.
-      </p>
-    </div>
-  </div>
-
-  <div
-    class="pointer-events-none absolute bottom-0 left-0 right-0 z-20 h-[150px] bg-gradient-to-t from-black/45 to-transparent"
-  ></div>
-</section>
-    
-    
-    <section
-             
-      id="tentang"
-      class="flex min-h-screen items-center bg-[#F7F7F5] px-[40px] py-[70px] md:px-[70px] lg:px-[95px]"
-    >
-      <div
-        class="flex w-full items-center justify-between gap-[70px] lg:gap-[100px] max-md:flex-col max-md:items-start max-md:gap-[55px]"
-      >
-        <div class="flex flex-1 flex-col items-start max-md:w-full">
-          <h1
-            class="m-0 text-left text-[44px] font-normal leading-[1.08] tracking-[-1.8px] text-neutral-600 sm:text-[48px] md:text-[52px]"
-          >
-            Tentang KodeKita
-          </h1>
-
-          <p
-            class="mt-[55px] max-w-[460px] text-left text-[16px] font-normal leading-[1.6] text-neutral-500 sm:text-[17px] md:text-[18px]"
-          >
-            KodeKita adalah ruang untuk belajar, berbagi, dan berkarya bersama
-            melalui teknologi. Kami hadir untuk mendorong kreativitas,
-            meningkatkan kemampuan digital, serta membangun semangat kolaborasi
-            di antara para pelajar.
-          </p>
-          <a
-            href="#"
-            class="mt-[28px] inline-flex h-[43px] items-center justify-center rounded-[8px] border border-[#1E4D63] bg-gradient-to-b from-[#3A8DB5] to-[#245F7D] px-[13px] text-[16px] font-normal text-white shadow-[inset_-3px_-3px_5px_rgba(0,0,0,0.35),0_3px_6px_rgba(0,0,0,0.25)] transition-all duration-200 hover:from-[#439AC2] hover:to-[#286B8C] hover:shadow-[inset_-3px_-3px_5px_rgba(0,0,0,0.35),0_4px_8px_rgba(0,0,0,0.3)] active:translate-y-[1px]"
-          >
-            Mulai Perjalanan Anda
-          </a>
-        </div>
-
-        <div class="flex shrink-0 justify-end">
-          <img
-            src="./assets/about.png"
-            alt="Tentang KodeKita"
-            class="h-[710px] w-[500px] rounded-[10px] object-cover object-center shadow-sm transition-transform duration-300 hover:scale-[1.01] max-lg:h-[380px] max-lg:w-[430px] max-md:h-[360px] max-md:w-full max-md:max-w-[500px]"
-          />
-        </div>
-      </div>
-    </section>
-
-    <footer
-      class="flex min-h-screen flex-col bg-[#0D0A0A] px-[32px] pt-[100px] pb-[28px] sm:px-[40px] md:px-[48px] lg:px-[52px]"
-    >
-      <div class="w-full flex-1">
-        <div>
-          <h1
-            class="m-0 font-['Bitcount_Grid_Double'] text-[23px] font-normal leading-none tracking-[0.5px] text-white sm:text-[24px]"
-          >
-            KodeKita
-          </h1>
-
-          <p
-            class="m-0 mt-[10px] max-w-[500px] text-[12px] font-normal leading-[1.5] text-neutral-400 sm:text-[13px]"
-          >
-            Belajar, berkarya, dan berkembang bersama melalui teknologi dan
-            kreativitas.
-          </p>
-        </div>
+      <section class="relative h-screen w-full overflow-hidden">
 
         <div
-          class="mt-[30px] grid grid-cols-1 gap-[35px] sm:grid-cols-3 sm:gap-[60px] md:gap-[90px] lg:gap-[120px]"
+          class="relative z-10 flex h-full w-[57%] flex-col bg-[#181B1C] px-[75px] pb-[70px] pt-[155px] lg:px-[75px]"
         >
-          <div>
-            <h2
-              class="m-0 text-[10px] font-normal uppercase tracking-[1px] text-neutral-500"
+          <div class="max-w-[600px]">
+
+            <h1
+              class="m-0 text-[58px] font-normal leading-[1.08] tracking-[-2.5px] text-neutral-100 md:text-[62px] lg:text-[60px]"
             >
-              Navigasi
-            </h2>
+              Hubungi KodeKita
+            </h1>
 
-            <nav class="mt-[23px] flex flex-col gap-[13px]">
-              <a
-                href="#beranda"
-                class="w-fit text-[13px] font-normal text-neutral-200 transition duration-200 hover:text-white"
-              >
-                Beranda
-              </a>
+            <p
+              class="mt-[22px] m-0 text-[13px] font-normal leading-[1.5] text-neutral-300"
+            >
+              Isi form di bawah untuk menghubungi KodeKita.
+            </p>
 
-              <a
-                href="#tentang"
-                class="w-fit text-[13px] font-normal text-neutral-200 transition duration-200 hover:text-white"
-              >
-                Tentang
-              </a>
+            <form class="mt-[42px] ml-[120px] flex w-[300px] flex-col">
 
-              <a
-                href="#galeri"
-                class="w-fit text-[13px] font-normal text-neutral-200 transition duration-200 hover:text-white"
-              >
-                Galeri
-              </a>
+              <label class="text-[12px] font-normal text-neutral-300">
+                Nama lengkap
+              </label>
 
-              <a
-                href="#kontak"
-                class="w-fit text-[13px] font-normal text-neutral-200 transition duration-200 hover:text-white"
+              <input
+                type="text"
+                class="mt-[7px] h-[32px] border-0 border-b border-neutral-600 bg-transparent px-[8px] text-[14px] text-white outline-none transition focus:border-neutral-300"
+              />
+
+              <label class="mt-[20px] text-[12px] font-normal text-neutral-300">
+                Email
+              </label>
+
+              <input
+                type="email"
+                class="mt-[7px] h-[32px] border-0 border-b border-neutral-600 bg-transparent px-[8px] text-[14px] text-white outline-none transition focus:border-neutral-300"
+              />
+
+              <label class="mt-[20px] text-[12px] font-normal text-neutral-300">
+                Subjek
+              </label>
+
+              <input
+                type="text"
+                class="mt-[7px] h-[32px] border-0 border-b border-neutral-600 bg-transparent px-[8px] text-[14px] text-white outline-none transition focus:border-neutral-300"
+              />
+
+              <label class="mt-[20px] text-[12px] font-normal text-neutral-300">
+                Pesan
+              </label>
+
+              <textarea
+                rows="4"
+                class="mt-[7px] resize-none border-0 border-b border-neutral-600 bg-transparent px-[8px] py-[5px] text-[14px] text-white outline-none transition focus:border-neutral-300"
+              ></textarea>
+
+              <button
+                type="submit"
+                class="mt-[25px] h-[36px] w-full bg-[#777777] text-[12px] font-normal text-white transition hover:bg-[#888888]"
               >
-                Kontak
-              </a>
-            </nav>
+                Send
+              </button>
+
+            </form>
+
           </div>
+        </div>
+      </div>
 
-          <div>
-            <h2
-              class="m-0 text-[10px] font-normal uppercase tracking-[1px] text-neutral-500"
-            >
-              Informasi
-            </h2>
+        <div class="absolute right-0 top-0 h-full w-[43%] overflow-hidden">
 
-            <nav class="mt-[23px] flex flex-col gap-[13px]">
-              <a
-                href="#tentang"
-                class="w-fit text-[13px] font-normal text-neutral-200 transition duration-200 hover:text-white"
-              >
-                Tentang KodeKita
-              </a>
+          <img
+            src="./assets/contact.png"
+            alt="Hubungi KodeKita"
+            class="absolute inset-0 h-full w-full object-cover object-center"
+          />
 
-              <a
-                href="#galeri"
-                class="w-fit text-[13px] font-normal text-neutral-200 transition duration-200 hover:text-white"
-              >
-                Kegiatan
-              </a>
+          <div class="absolute inset-0 bg-black/45"></div>
 
-              <a
-                href="#faq"
-                class="w-fit text-[13px] font-normal text-neutral-200 transition duration-200 hover:text-white"
-              >
-                FAQ
-              </a>
-            </nav>
-          </div>
+          <div
+            class="absolute bottom-[24px] right-[60px] z-10 w-[200px] text-right"
+          >
 
-          <div>
-            <h2
-              class="m-0 text-[10px] font-normal uppercase tracking-[1px] text-neutral-500"
-            >
-              Hubungi Kami
-            </h2>
-
-            <div class="mt-[23px] flex flex-col gap-[13px]">
-              <p class="m-0 text-[13px] font-normal text-neutral-200">
-                Email: kodekita@gmail.com
+            <div>
+              <p class="m-0 text-[11px] font-normal text-neutral-300">
+                Kunjungi Kami
               </p>
 
-              <p class="m-0 text-[13px] font-normal text-neutral-200">
-                Instagram: @kodekita
-              </p>
-
-              <p class="m-0 text-[13px] font-normal text-neutral-200">
-                Lokasi: Jakarta, Indonesia
+              <p
+                class="mt-[8px] m-0 text-[11px] font-normal leading-[1.4] text-neutral-300"
+              >
+                Jl. Contoh No. 123<br />
+                Jakarta, Indonesia
               </p>
             </div>
+
+            <div class="mt-[20px]">
+              <p class="m-0 text-[11px] font-normal text-neutral-300">
+                Talk to us
+              </p>
+
+              <p
+                class="mt-[8px] m-0 text-[11px] font-normal leading-[1.4] text-neutral-300"
+              >
+                +62 812-8888-8888<br />
+                kodekita@gmail.com
+              </p>
+            </div>
+
+            <div
+              class="mt-[14px] flex justify-end gap-[10px] border-t border-neutral-500/60 pt-[9px]"
+            >
+
+              <a
+                href="#"
+                aria-label="Instagram"
+                class="text-neutral-300 transition hover:text-white"
+              >
+                <iconify-icon
+                  icon="mdi:instagram"
+                  width="15"
+                  height="15"
+                ></iconify-icon>
+              </a>
+
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                class="text-neutral-300 transition hover:text-white"
+              >
+                <iconify-icon
+                  icon="mdi:linkedin"
+                  width="15"
+                  height="15"
+                ></iconify-icon>
+              </a>
+
+              <a
+                href="#"
+                aria-label="GitHub"
+                class="text-neutral-300 transition hover:text-white"
+              >
+                <iconify-icon
+                  icon="mdi:github"
+                  width="15"
+                  height="15"
+                ></iconify-icon>
+              </a>
+
+              <a
+                href="mailto:kodekita@gmail.com"
+                aria-label="Email"
+                class="text-neutral-300 transition hover:text-white"
+              >
+                <iconify-icon
+                  icon="mdi:email-outline"
+                  width="15"
+                  height="15"
+                ></iconify-icon>
+              </a>
+
+            </div>
+
           </div>
         </div>
-      </div>
 
-      <div
-        class="relative mt-[70px] flex h-[70px] w-full shrink-0 items-center border border-neutral-700/70"
-      >
-        <p
-          class="m-0 pl-[22px] text-[10px] font-normal tracking-[0.2px] text-neutral-400 sm:text-[11px]"
-        >
-          © 2026 Kode Kita. All rights reserved.
-        </p>
+      </section>
 
-        <div
-          class="absolute left-1/2 top-1/2 flex h-[22px] w-[22px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-neutral-400 text-neutral-300"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1"
-            class="h-[14px] w-[14px]"
-          >
-            <circle cx="12" cy="12" r="8" />
-
-            <path d="M4 12h16" />
-
-            <path d="M12 4c2.5 2.2 3.5 5 3.5 8s-1 5.8-3.5 8" />
-
-            <path d="M12 4c-2.5 2.2-3.5 5-3.5 8s1-5.8 3.5-8" />
-          </svg>
-        </div>
-      </div>
-    </footer>
-    <script>
-      const heroBackground = document.getElementById("heroBackground");
-
-      const navLinks = document.querySelectorAll("[data-nav]");
-
-      const sections = document.querySelectorAll("#beranda, #tentang, #kontak");
-
-      function setActiveNav(sectionId) {
-        navLinks.forEach((link) => {
-          const isActive = link.dataset.nav === sectionId;
-
-          if (isActive) {
-            link.classList.add("bg-white", "text-black");
-
-            link.classList.remove("text-white/75");
-          } else {
-            link.classList.remove("bg-white", "text-black");
-
-            link.classList.add("text-white/75");
-          }
-        });
-      }
-
-      navLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          const sectionId = link.dataset.nav;
-
-          setActiveNav(sectionId);
-        });
-      });
-
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              setActiveNav(entry.target.id);
-            }
-          });
-        },
-        {
-          threshold: 0.45,
-        },
-      );
-
-      sections.forEach((section) => {
-        observer.observe(section);
-      });
-
-      window.addEventListener("mousemove", (event) => {
-        if (window.innerWidth <= 768) {
-          return;
-        }
-
-        const x = (event.clientX / window.innerWidth - 0.5) * 4;
-
-        const y = (event.clientY / window.innerHeight - 0.5) * 4;
-
-        heroBackground.style.transform = scale(1.02) translate(${x}px, ${y}px);
-      });
-
-      document.getElementById("beranda").addEventListener("mouseleave", () => {
-        heroBackground.style.transform = "scale(1.02)";
-      });
-    </script>
+    </main>
   </body>
 </html>

@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KodeKita</title>
+
+    <link rel="stylesheet" href="./dist/output.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Manrope:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+  </head>
+
+  <body class="m-0 h-screen overflow-hidden bg-[#181B1C] font-['Manrope'] text-white">
+    <main class="h-screen overflow-hidden">
+
+      <header
+        class="absolute left-0 top-0 z-20 flex h-[80px] w-full items-center justify-between bg-black px-[48px] md:px-[55px] lg:px-[48px]"
+      >
+        <a
+          href="#"
+          class="font-['Bitcount_Grid_Double'] text-[30px] font-normal leading-none tracking-[1px] text-white"
+        >
+          KodeKita
+        </a>
+
+        <a
+          href="#"
+          class="flex h-[38px] w-[112px] items-center justify-center rounded-[7px] bg-white text-[13px] font-normal text-neutral-800 transition hover:bg-neutral-200"
+        >
+          Back
+        </a>
+      </header>
+
+      <section class="relative h-screen w-full overflow-hidden">
+
+        <div
+          class="relative z-10 flex h-full w-[57%] flex-col bg-[#181B1C] px-[75px] pb-[70px] pt-[155px] lg:px-[75px]"
+        >
+          <div class="max-w-[600px]">
+
+            <h1
+              class="m-0 text-[58px] font-normal leading-[1.08] tracking-[-2.5px] text-neutral-100 md:text-[62px] lg:text-[60px]"
+            >
+              Hubungi KodeKita
+            </h1>
+
+            <p
+              class="mt-[22px] m-0 text-[13px] font-normal leading-[1.5] text-neutral-300"
+            >
+              Isi form di bawah untuk menghubungi KodeKita.
+            </p>
+
+            <form class="mt-[42px] ml-[120px] flex w-[300px] flex-col">
+
+              <label class="text-[12px] font-normal text-neutral-300">
+                Nama lengkap
+              </label>
+
+              <input
+                type="text"
+                class="mt-[7px] h-[32px] border-0 border-b border-neutral-600 bg-transparent px-[8px] text-[14px] text-white outline-none transition focus:border-neutral-300"
+              />
+
+              <label class="mt-[20px] text-[12px] font-normal text-neutral-300">
+                Email
+              </label>
+
+              <input
+                type="email"
+                class="mt-[7px] h-[32px] border-0 border-b border-neutral-600 bg-transparent px-[8px] text-[14px] text-white outline-none transition focus:border-neutral-300"
+              />
+
+              <label class="mt-[20px] text-[12px] font-normal text-neutral-300">
+                Subjek
+              </label>
+
+              <input
+                type="text"
+                class="mt-[7px] h-[32px] border-0 border-b border-neutral-600 bg-transparent px-[8px] text-[14px] text-white outline-none transition focus:border-neutral-300"
+              />
+
+              <label class="mt-[20px] text-[12px] font-normal text-neutral-300">
+                Pesan
+              </label>
+
+              <textarea
+                rows="4"
+                class="mt-[7px] resize-none border-0 border-b border-neutral-600 bg-transparent px-[8px] py-[5px] text-[14px] text-white outline-none transition focus:border-neutral-300"
+              ></textarea>
+
+              <button
+                type="submit"
+                class="mt-[25px] h-[36px] w-full bg-[#777777] text-[12px] font-normal text-white transition hover:bg-[#888888]"
+              >
+                Send
+              </button>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+        <div class="absolute right-0 top-0 h-full w-[43%] overflow-hidden">
+
+          <img
+            src="./assets/contact.png"
+            alt="Hubungi KodeKita"
+            class="absolute inset-0 h-full w-full object-cover object-center"
+          />
+
+          <div class="absolute inset-0 bg-black/45"></div>
+
+          <div
+            class="absolute bottom-[24px] right-[60px] z-10 w-[200px] text-right"
+          >
+
+            <div>
+              <p class="m-0 text-[11px] font-normal text-neutral-300">
+                Kunjungi Kami
+              </p>
+
+              <p
+                class="mt-[8px] m-0 text-[11px] font-normal leading-[1.4] text-neutral-300"
+              >
+                Jl. Contoh No. 123<br />
+                Jakarta, Indonesia
+              </p>
+            </div>
+
+            <div class="mt-[20px]">
+              <p class="m-0 text-[11px] font-normal text-neutral-300">
+                Talk to us
+              </p>
+
+              <p
+                class="mt-[8px] m-0 text-[11px] font-normal leading-[1.4] text-neutral-300"
+              >
+                +62 812-8888-8888<br />
+                kodekita@gmail.com
+              </p>
+            </div>
+
+            <div
+              class="mt-[14px] flex justify-end gap-[10px] border-t border-neutral-500/60 pt-[9px]"
+            >
+
+              <a
+                href="#"
+                aria-label="Instagram"
+                class="text-neutral-300 transition hover:text-white"
+              >
+                <iconify-icon
+                  icon="mdi:instagram"
+                  width="15"
+                  height="15"
+                ></iconify-icon>
+              </a>
+
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                class="text-neutral-300 transition hover:text-white"
+              >
+                <iconify-icon
+                  icon="mdi:linkedin"
+                  width="15"
+                  height="15"
+                ></iconify-icon>
+              </a>
+
+              <a
+                href="#"
+                aria-label="GitHub"
+                class="text-neutral-300 transition hover:text-white"
+              >
+                <iconify-icon
+                  icon="mdi:github"
+                  width="15"
+                  height="15"
+                ></iconify-icon>
+              </a>
+
+              <a
+                href="mailto:kodekita@gmail.com"
+                aria-label="Email"
+                class="text-neutral-300 transition hover:text-white"
+              >
+                <iconify-icon
+                  icon="mdi:email-outline"
+                  width="15"
+                  height="15"
+                ></iconify-icon>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+  </body>
+</html>

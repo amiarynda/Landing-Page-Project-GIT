@@ -1,7 +1,6 @@
 const formLink = "https://formspree.io/f/xvkpbpqp";
 
 const formElement = document.getElementById('form-contact');
-// form element ada nama lengkap (input), email (input), subjek (input), pesan (textarea)
 
 formElement.addEventListener("submit", async (event) => {
   event.preventDefault();
@@ -16,6 +15,6 @@ formElement.addEventListener("submit", async (event) => {
 
   if (response.ok) {
     formElement.reset();
-    alert("Message is successfully sent");
+    alert("Pesan berhasil dikirim!");
   }
 });

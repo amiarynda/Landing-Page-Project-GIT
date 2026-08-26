@@ -20,11 +20,11 @@
   </head>
 
   <body
-    class="m-0 h-screen overflow-hidden bg-[#181B1C] font-['Manrope'] text-white"
+    class="m-0 min-h-screen bg-[#181B1C] font-['Manrope'] text-white"
   >
-    <main class="h-screen overflow-hidden">
+    <main class="min-h-screen">
       <header
-        class="absolute left-0 top-0 z-20 flex h-[80px] w-full items-center justify-between bg-black px-[48px] md:px-[55px] lg:px-[48px]"
+        class="sticky top-0 z-50 flex h-[80px] w-full items-center justify-between bg-black px-[48px] md:px-[55px] lg:px-[48px]"
       >
         <a
           href="#"
@@ -41,9 +41,9 @@
         </a>
       </header>
 
-      <section class="relative h-screen w-full overflow-hidden">
+      <section class="relative min-h-screen w-full">
         <div
-          class="relative z-10 flex h-full w-[57%] flex-col bg-[#181B1C] px-[75px] pb-[70px] pt-[155px] lg:px-[75px]"
+          class="relative z-10 flex min-h-screen w-[57%] flex-col bg-[#181B1C] px-[75px] pb-[70px] pt-[75px] lg:px-[75px]"
         >
           <div class="max-w-[600px]">
             <h1
@@ -53,7 +53,7 @@
             </h1>
 
             <p
-              class="mt-[22px] m-0 text-[13px] font-normal leading-[1.5] text-neutral-300"
+              class="m-0 mt-[22px] text-[13px] font-normal leading-[1.5] text-neutral-300"
             >
               Isi form di bawah untuk menghubungi KodeKita.
             </p>
@@ -69,6 +69,7 @@
 
               <input
                 type="text"
+                name="name"
                 class="mt-[7px] h-[32px] border-0 border-b border-neutral-600 bg-transparent px-[8px] text-[14px] text-white outline-none transition focus:border-neutral-300"
               />
 
@@ -78,6 +79,7 @@
 
               <input
                 type="email"
+                name="email"
                 class="mt-[7px] h-[32px] border-0 border-b border-neutral-600 bg-transparent px-[8px] text-[14px] text-white outline-none transition focus:border-neutral-300"
               />
 
@@ -87,6 +89,7 @@
 
               <input
                 type="text"
+                name="subject"
                 class="mt-[7px] h-[32px] border-0 border-b border-neutral-600 bg-transparent px-[8px] text-[14px] text-white outline-none transition focus:border-neutral-300"
               />
 
@@ -95,6 +98,7 @@
               </label>
 
               <textarea
+                name="message"
                 rows="4"
                 class="mt-[7px] resize-none border-0 border-b border-neutral-600 bg-transparent px-[8px] py-[5px] text-[14px] text-white outline-none transition focus:border-neutral-300"
               ></textarea>
@@ -109,7 +113,7 @@
           </div>
         </div>
 
-        <div class="absolute right-0 top-0 h-full w-[43%] overflow-hidden">
+        <div class="absolute right-0 top-0 h-full w-[43%]">
           <img
             src="./assets/contact.png"
             alt="Hubungi KodeKita"
@@ -127,7 +131,7 @@
               </p>
 
               <p
-                class="mt-[8px] m-0 text-[11px] font-normal leading-[1.4] text-neutral-300"
+                class="m-0 mt-[8px] text-[11px] font-normal leading-[1.4] text-neutral-300"
               >
                 Jl. Contoh No. 123<br />
                 Jakarta, Indonesia
@@ -140,7 +144,7 @@
               </p>
 
               <p
-                class="mt-[8px] m-0 text-[11px] font-normal leading-[1.4] text-neutral-300"
+                class="m-0 mt-[8px] text-[11px] font-normal leading-[1.4] text-neutral-300"
               >
                 +62 812-8888-8888<br />
                 kodekita@gmail.com
@@ -202,5 +206,6 @@
         </div>
       </section>
     </main>
+    <script src="js/form.js"></script>
   </body>
 </html>

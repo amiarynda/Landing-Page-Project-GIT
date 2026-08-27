@@ -19,193 +19,149 @@
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
   </head>
 
-  <body
-    class="m-0 min-h-screen bg-[#181B1C] font-['Manrope'] text-white"
-  >
-    <main class="min-h-screen">
-      <header
-        class="sticky top-0 z-50 flex h-[80px] w-full items-center justify-between bg-black px-[48px] md:px-[55px] lg:px-[48px]"
+  <body class="m-0 h-screen overflow-hidden bg-[#181B1C] font-['Manrope'] text-white">
+
+    <header
+      class="sticky top-0 z-50 flex h-[60px] w-full items-center justify-between bg-black px-6 sm:px-10 lg:px-12"
+    >
+      <a
+        href="index.html"
+        class="font-['Bitcount_Grid_Double'] text-[26px] font-normal leading-none tracking-[1px] text-white"
       >
-        <a
-          href="#"
-          class="font-['Bitcount_Grid_Double'] text-[30px] font-normal leading-none tracking-[1px] text-white"
+        KodeKita
+      </a>
+
+      <a
+        href="index.html"
+        class="flex h-[34px] w-[90px] items-center justify-center rounded-[7px] bg-white text-[12px] font-normal text-neutral-800 transition hover:bg-neutral-200"
+      >
+        Kembali
+      </a>
+    </header>
+
+    <main class="flex h-[calc(100vh-60px)] w-full">
+
+      <!-- FORM SIDE -->
+
+      <section
+        aria-labelledby="contact-heading"
+        class="flex w-full flex-col justify-center overflow-y-auto px-6 py-8 sm:px-10 md:w-[55%] md:px-12 lg:px-16"
+      >
+        <h1
+          id="contact-heading"
+          class="m-0 text-[36px] font-normal leading-[1.08] tracking-[-2px] text-neutral-100 sm:text-[44px] lg:text-[52px]"
         >
-          KodeKita
-        </a>
+          Hubungi KodeKita
+        </h1>
 
-        <a
-          href="index.html"
-          class="flex h-[38px] w-[112px] items-center justify-center rounded-[7px] bg-white text-[13px] font-normal text-neutral-800 transition hover:bg-neutral-200"
+        <p class="m-0 mt-4 text-[13px] font-normal leading-normal text-neutral-400">
+          Isi form di bawah untuk menghubungi KodeKita.
+        </p>
+
+        <form
+          id="form-contact"
+          method="POST"
+          class="mt-8 flex w-full max-w-[400px] flex-col"
         >
-          Back
-        </a>
-      </header>
-
-      <section class="relative min-h-screen w-full">
-        <div
-          class="relative z-10 flex min-h-screen w-[57%] flex-col bg-[#181B1C] px-[75px] pb-[70px] pt-[75px] lg:px-[75px]"
-        >
-          <div class="max-w-[600px]">
-            <h1
-              class="m-0 text-[58px] font-normal leading-[1.08] tracking-[-2.5px] text-neutral-100 md:text-[62px] lg:text-[60px]"
-            >
-              Hubungi KodeKita
-            </h1>
-
-            <p
-              class="m-0 mt-[22px] text-[13px] font-normal leading-[1.5] text-neutral-300"
-            >
-              Isi form di bawah untuk menghubungi KodeKita.
-            </p>
-
-            <form
-              id="form-contact"
-              method="POST"
-              class="mt-[42px] ml-[120px] flex w-[300px] flex-col"
-            >
-              <label class="text-[12px] font-normal text-neutral-300">
-                Nama lengkap
-              </label>
-
-              <input
-                type="text"
-                name="name"
-                class="mt-[7px] h-[32px] border-0 border-b border-neutral-600 bg-transparent px-[8px] text-[14px] text-white outline-none transition focus:border-neutral-300"
-              />
-
-              <label class="mt-[20px] text-[12px] font-normal text-neutral-300">
-                Email
-              </label>
-
-              <input
-                type="email"
-                name="email"
-                class="mt-[7px] h-[32px] border-0 border-b border-neutral-600 bg-transparent px-[8px] text-[14px] text-white outline-none transition focus:border-neutral-300"
-              />
-
-              <label class="mt-[20px] text-[12px] font-normal text-neutral-300">
-                Subjek
-              </label>
-
-              <input
-                type="text"
-                name="subject"
-                class="mt-[7px] h-[32px] border-0 border-b border-neutral-600 bg-transparent px-[8px] text-[14px] text-white outline-none transition focus:border-neutral-300"
-              />
-
-              <label class="mt-[20px] text-[12px] font-normal text-neutral-300">
-                Pesan
-              </label>
-
-              <textarea
-                name="message"
-                rows="4"
-                class="mt-[7px] resize-none border-0 border-b border-neutral-600 bg-transparent px-[8px] py-[5px] text-[14px] text-white outline-none transition focus:border-neutral-300"
-              ></textarea>
-
-              <button
-                type="submit"
-                class="mt-[25px] h-[36px] w-full bg-[#777777] text-[12px] font-normal text-white transition hover:bg-[#888888]"
-              >
-                Send
-              </button>
-            </form>
-          </div>
-        </div>
-
-        <div class="absolute right-0 top-0 h-full w-[43%]">
-          <img
-            src="./assets/contact.png"
-            alt="Hubungi KodeKita"
-            class="absolute inset-0 h-full w-full object-cover object-center"
+          <label class="text-[12px] font-normal text-neutral-400">
+            Nama lengkap
+          </label>
+          <input
+            type="text"
+            name="name"
+            class="mt-1.5 h-8 border-0 border-b border-neutral-600 bg-transparent px-2 text-[14px] text-white outline-none transition focus:border-neutral-300"
           />
 
-          <div class="absolute inset-0 bg-black/45"></div>
+          <label class="mt-5 text-[12px] font-normal text-neutral-400">
+            Email
+          </label>
+          <input
+            type="email"
+            name="email"
+            class="mt-1.5 h-8 border-0 border-b border-neutral-600 bg-transparent px-2 text-[14px] text-white outline-none transition focus:border-neutral-300"
+          />
 
-          <div
-            class="absolute bottom-[24px] right-[60px] z-10 w-[200px] text-right"
+          <label class="mt-5 text-[12px] font-normal text-neutral-400">
+            Subjek
+          </label>
+          <input
+            type="text"
+            name="subject"
+            class="mt-1.5 h-8 border-0 border-b border-neutral-600 bg-transparent px-2 text-[14px] text-white outline-none transition focus:border-neutral-300"
+          />
+
+          <label class="mt-5 text-[12px] font-normal text-neutral-400">
+            Pesan
+          </label>
+          <textarea
+            name="message"
+            rows="3"
+            class="mt-1.5 resize-none border-0 border-b border-neutral-600 bg-transparent px-2 py-1 text-[14px] text-white outline-none transition focus:border-neutral-300"
+          ></textarea>
+
+          <button
+            type="submit"
+            class="mt-6 h-9 w-full bg-[#777777] text-[12px] font-normal text-white transition hover:bg-[#888888]"
           >
-            <div>
-              <p class="m-0 text-[11px] font-normal text-neutral-300">
-                Kunjungi Kami
-              </p>
+            Kirim
+          </button>
+        </form>
+      </section>
 
-              <p
-                class="m-0 mt-[8px] text-[11px] font-normal leading-[1.4] text-neutral-300"
-              >
-                Jl. Contoh No. 123<br />
-                Jakarta, Indonesia
-              </p>
-            </div>
+      <!-- IMAGE SIDE -->
 
-            <div class="mt-[20px]">
-              <p class="m-0 text-[11px] font-normal text-neutral-300">
-                Talk to us
-              </p>
+      <aside
+        class="relative hidden h-full md:block md:w-[45%]"
+        aria-hidden="true"
+      >
+        <img
+          src="./assets/contact.png"
+          alt=""
+          class="h-full w-full object-cover object-center"
+        />
 
-              <p
-                class="m-0 mt-[8px] text-[11px] font-normal leading-[1.4] text-neutral-300"
-              >
-                +62 812-8888-8888<br />
-                kodekita@gmail.com
-              </p>
-            </div>
+        <div class="absolute inset-0 bg-black/45"></div>
 
-            <div
-              class="mt-[14px] flex justify-end gap-[10px] border-t border-neutral-500/60 pt-[9px]"
-            >
-              <a
-                href="#"
-                aria-label="Instagram"
-                class="text-neutral-300 transition hover:text-white"
-              >
-                <iconify-icon
-                  icon="mdi:instagram"
-                  width="15"
-                  height="15"
-                ></iconify-icon>
-              </a>
+        <div class="absolute bottom-6 right-10 z-10 w-[190px] text-right">
+          <div>
+            <p class="m-0 text-[11px] font-normal text-neutral-300">
+              Kunjungi Kami
+            </p>
+            <p class="m-0 mt-2 text-[11px] font-normal leading-[1.4] text-neutral-300">
+              Jl. Contoh No. 123<br />
+              Jakarta, Indonesia
+            </p>
+          </div>
 
-              <a
-                href="#"
-                aria-label="LinkedIn"
-                class="text-neutral-300 transition hover:text-white"
-              >
-                <iconify-icon
-                  icon="mdi:linkedin"
-                  width="15"
-                  height="15"
-                ></iconify-icon>
-              </a>
+          <div class="mt-5">
+            <p class="m-0 text-[11px] font-normal text-neutral-300">
+              Talk to us
+            </p>
+            <p class="m-0 mt-2 text-[11px] font-normal leading-[1.4] text-neutral-300">
+              +62 812-8888-8888<br />
+              kodekita@gmail.com
+            </p>
+          </div>
 
-              <a
-                href="#"
-                aria-label="GitHub"
-                class="text-neutral-300 transition hover:text-white"
-              >
-                <iconify-icon
-                  icon="mdi:github"
-                  width="15"
-                  height="15"
-                ></iconify-icon>
-              </a>
-
-              <a
-                href="mailto:kodekita@gmail.com"
-                aria-label="Email"
-                class="text-neutral-300 transition hover:text-white"
-              >
-                <iconify-icon
-                  icon="mdi:email-outline"
-                  width="15"
-                  height="15"
-                ></iconify-icon>
-              </a>
-            </div>
+          <div class="mt-3.5 flex justify-end gap-2.5 border-t border-neutral-500/60 pt-2">
+            <a href="#" aria-label="Instagram" class="text-neutral-300 transition hover:text-white">
+              <iconify-icon icon="mdi:instagram" width="15" height="15"></iconify-icon>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="text-neutral-300 transition hover:text-white">
+              <iconify-icon icon="mdi:linkedin" width="15" height="15"></iconify-icon>
+            </a>
+            <a href="#" aria-label="GitHub" class="text-neutral-300 transition hover:text-white">
+              <iconify-icon icon="mdi:github" width="15" height="15"></iconify-icon>
+            </a>
+            <a href="mailto:kodekita@gmail.com" aria-label="Email" class="text-neutral-300 transition hover:text-white">
+              <iconify-icon icon="mdi:email-outline" width="15" height="15"></iconify-icon>
+            </a>
           </div>
         </div>
-      </section>
+      </aside>
+
     </main>
+
     <script src="js/form.js"></script>
   </body>
 </html>
